@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tablas en HTML</title>
+    </head>
+    <body>
+      <style>
+        table{
+          border-collapse: collapse;
+          width: 100%;
+        }
+        table, th, td{
+          border: double;
+          border-color: red;
+        }
+        th{
+          height: 30px;
+        }
+        td{
+          padding: 5px;
+        }
+        tr:nth-child(odd){
+          background-color: #f2f2f2;
+        }
+        tbody > tr:hover{
+          background-color: black;
+          color: white;
+        }
+
+       
+
+
+      </style>
+      <table>
+        <caption>Gasto semanal</caption>
+        <thead>
+            <tr>
+                <th>Lugar gasto</th>
+                <th>Día</th>
+                <th>Precio</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>campo de futbol</td>
+              <td>sábado</td>
+              <td>50€</td>
+            </tr>
+            <tr>
+              <td>bailes de salón</td>
+              <td>Domíngo</td>
+              <td>10€</td>
+            </tr>
+            <tr>
+              <td>salir a cenar</td>
+              <td>Sábado</td>
+              <td>20€</td>
+            </tr>
+            <tr>
+              <td>transporte público</td>
+              <td>Lunes</td>
+              <td>10€</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Cine</td>
+              <td>Martes</td>
+              <td>10€</td>
+            </tr>
+            <tr>
+                <td>Miercoles</td>
+                <td>10€</td>
+              </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">suma total</td>
+                <td>110€</td>
+              </tr>
+        </tfoot>
+      </table>        
+    </body>
+</html>
