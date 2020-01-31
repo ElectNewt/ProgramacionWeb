@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Formulario de registro</h1>
+        <form action="Formularios.html" enctype="multipart/form-data" method="POST">
+            
+        Nombre de usuario <input type="text" ><br/>
+        contraseña <input type="password" ><br/>
+        Edad <input type="number"><br/>
+        Ejemplo boton <input type="button" value="test"><br>
+        input oculto <input type="hidden" value="test"> <br>
+        <h4>radio</h4>
+        <input type="radio" name="sexo" value="masculino" checked> masculino <br>
+        <input type="radio" name="sexo" value="femenino"> femenino<br>
+        <input type="radio" name="sexo" value="otro"> otro<br>
+
+        Imagen perfil <input type="file" name="Imagen">
+        <br/>
+        <hr>
+        <h4>Idiomas</h4>
+        <select name="idiomas">
+            <option value="en">Inglés</option>
+            <option value="es" selected>Español</option>
+            <option value="fr" >Frances</option>
+        </select>
+        <hr>
+        <h4>textarea</h4>
+        <textarea rows="10" cols="50" name="textarea"></textarea>
+        <hr>
+        <h4>Datalist</h4>
+        
+        <input list="idiomamaterno">               <datalist id="idiomamaterno">
+            <option value="en">Inglés</option>
+            <option value="es">español</option>
+            <option value="fr">Francés</option>
+        </datalist>
+
+
+
+
+
+<hr>
+
+<input type="checkbox" /> acepto terminos y condiciones <br>
+          <input type="submit" value="Enviar formulario">
+        </form>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
